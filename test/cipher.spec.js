@@ -10,7 +10,19 @@ describe('cipher', () => {
       assert.equal(typeof cipher.encode, 'function');
     });
 
-    it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33');
+    it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33',() => {
+     
+      assert.equal(cipher.encode(33,"ABCDEFGHIJKLMNOPQRSTUVWXYZ"), "HIJKLMNOPQRSTUVWXYZABCDEFG" )
+
+    });
+
+    it('debería retornar "Tgt Lmxiatgbx" para "Ana Stephanie" con offset 33',() => {
+     
+      assert.equal(cipher.encode(19,"Ana Stephanie"), "Tgt Lmxiatgbx" )
+
+    });
+
+
   });
 
   describe('cipher.decode', () => {
@@ -19,7 +31,20 @@ describe('cipher', () => {
       assert.equal(typeof cipher.decode, 'function');
     });
 
-    it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33');
+    it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () =>{
+    
+      assert.equal(cipher.decode(33,"HIJKLMNOPQRSTUVWXYZABCDEFG"),"ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+
+    });
+
+    it('debería retornar "Ana Stephanie" para "Tgt Lmxiatgbx" con offset 33', () =>{
+    
+      assert.equal(cipher.decode(19,"Tgt Lmxiatgbx"),"Ana Stephanie")
+
+    });
+
+
+
   });
 
 });

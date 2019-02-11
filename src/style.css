@@ -1,1 +1,104 @@
 /* Acá va tu código */
+
+
+
+*{
+    padding: 0 auto;   /*quitar marjen y padding de default*/
+    margin: 0 auto;
+}
+
+/*Para todo el doc*/
+body{
+    text-align: center;            /*Alinear el texto al centro*/
+    background-color: #f2f2fc;   
+    font-style: italic;
+    font-size: 130%;
+   
+}
+
+/*Para sección main que incluye todas las secciones*/
+.all-sections{
+    margin-top: 2px;   /*margen superior de toda la página */
+    margin-left: 70px;  /*margenes generales de la pagina*/
+    margin-right: 70px;
+    padding: 17%;      /*Aquí le modifique para que la barra fija no estuviera encima de la sección uno*/ 
+}
+
+
+
+/*Inicia sección header*/
+
+#first-background{
+    background: url(Imagen/Background-1.jpg);
+    padding: 4%;
+    position: fixed;
+    width: 100%;
+    
+}
+
+#first-background h1{
+
+    font-size: 250%;
+    
+}
+
+/*Termina sección header*/
+
+
+/*Inicia sección barra*/
+#bar{
+    background-color: black;
+    padding: 1.4%; 
+    font-size: 110%;
+    position:fixed;
+    width: 100%;
+    margin-top: 12%;  
+}
+
+.navbar li{
+
+    list-style: none;     /*Quitarle a la lista los puntos */
+    display: inline-block; /*Mostrar la barra en horizontal*/
+    margin-right: 35px;   /*Espacio entre las palabras de la barra*/
+}
+
+.navbar li a{
+     
+    text-decoration: none; /*Quitarle el subrayado a las palabras de la barra*/
+    color: gainsboro;
+}
+/*Termina sección barra*/
+
+
+/*Inicia sección primero-Cipher*/
+#cipher{
+
+    font-size: 125%;
+    margin:10%;
+    border: double;
+    height: 200%;
+    
+}
+
+/*Imagen segunda sección*/
+#imgwe-want-beer{
+
+  margin-top: 1em;
+  margin-bottom: 1em;
+  
+}
+
+/*Imagen tercera sección*/
+#imgbest-coctail{
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+  }
+
+/*Imagen cuarta sección*/
+#imgsecret-bar{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+}

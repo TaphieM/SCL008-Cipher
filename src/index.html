@@ -1,15 +1,154 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+<html lan="en">
+
+<head>
+<meta charset="UTF-8">
+
+<title> speakeasy cipher</title>
+
+</head>
+
+<body>
+    <!-- Inicio de mi encabezado -->
+ <header id="first-background">
+   <h1>Speakeasy Cipher</h1> 
+</header>  
+       <!-- Fin de encabezado -->
+
+<!-- Inicio barra de navegación -->
+ <nav id="bar">
+
+    <ul class="navbar">
+       <li><a href="#start">Inicio</a></li>
+       <li><a href="#history">Historia</a></li>
+       <li><a href="#concept">Concepto</a></li>
+       <li><a href="#contact">Contacto</a></li>
+    </ul>
+   
+</nav>
+
+<!-- Fin barra de navegación -->
+ 
+<main class="all-sections">
+
+<!-- Inicio primera seccion -->
+   
+    <section id="start"> 
+        <br>
+        <p>Sabemos que recibiste el número y el código secreto, el evento te espera y speakeasy cipher
+         esta aquí para ayudarte a obtener la palabra que te permitirá el acceso a la diversión. :)
+         <br>
+         <br>En caso de ser un bar speakeasy, estamos aquí para ayudarte a codificar la palabra secreta
+         para el gran evento y ayudarte a distribuirla entre tus clientes frecuentes de manera más practica.
+       
+        </p>
+
+        <div id="cipher">
+            <div>
+               <p>Ingresa los datos necesarios:</p>
+            </div>
+            <div>
+               <label for="offset">Número</label>
+               <input 
+                 type="text"
+                 id="offset" 
+                 placeholder="Ingresar número" 
+                 required/>     
+            </div>  
+         
+            <div>
+               <label for="letters">Palabra</label>
+               <input 
+               type="text"
+               id="letters"  
+               placeholder="Ingresar código" 
+               required/>     
+            </div>
+            
+           <br>
+            <div id="result">
+            
+
+            </div>
+         
+            <button id="buttonDecode">Descifrar</button>
+            <button id="buttonEncode">Encriptar</button>
+            <button id="buttonClean">Limpiar</button>
+                 
+         </div> 
+    </section>  
+<!-- Fin primera sección -->
+
+<!-- Inicia segunda sección -->
+    
+    <section id="history">
+        <br>
+     <h2>Historia</h2>
+     <hr>
+     <figure id="imgwe-want-beer">
+      <img src="Imagen/we-want-beer.jpg" alt="Alcohol Prohibition" style="max-width: 100%;">   
+     </figure>
+     <p>El término "speakeasy" tiene origen en las primeras décadas del siglo XX, en la cosmopolita ciudad de Nueva York. 
+      En esos momentos, en toda la ciudad regía la ley seca, una polémica medida que impedía la fabricación y el consumo de alcohol. 
+      Para demostrar que toda ley nace para ser quebrada comienzan a aparecer estos bares a "puertas cerradas". 
+      De esa manera, boca en boca, se iba corriendo el rumor de la ubicación de aquellos lugares que permitían mantener vigente el ocio y los placeres nocturnos.
+      Utilizando la fidelidad de su clientela, los bares formaban verdaderas comunidades secretas 
+      donde los propios clientes eran responsables de invitar a nuevos amigos a formar parte del misterio. 
+      Para ello se utilizaban contraseñas o invitaciones que sólo podían ser distribuidas por los clientes ya que los bares confiaban en ellos.
+     <br>
+     <br>Si bien, en su mayor parte, los speakeasy desaparecieron una vez que terminó la prohibición 
+      y aunque servir alcohol ya no es ilegal, desde el año 2000, ha habido una tendencia a alejarse de los bares modernos
+      y bien iluminados llenos de gente, hacia un retiro más exclusivo, acogedor y retro.
+      En estos días, se pueden encontrar versiones modernas de estos bares en casi todas las ciudades importantes del mundo.
+
+      </p>
+    
+    </section>
+        
+<!-- Fin segunda sección -->
+
+
+<!-- Inicio tercera sección --> 
+    
+    <section id="concept">
+        <br>
+    <h2>Concepto</h2>
+    <hr>    
+    <figure id="imgbest-coctail">
+       <img src="Imagen/best-cocktail.jpg" alt="premium-coctail" style="max-width: 100%;"> 
+    </figure>
+    <p>Actualmente lo que define a estos reductos es su barra premium con propuestas de autor y clásicos tragos de la época 
+      de alta calidad, otro aspecto llamativo son las fachadas, algunas muy originales como ingresar por una cabina telefónica 
+      o refrigeradores.
+      La idea para el ingreso a estos bares no es restrictiva o discriminatoria, sino un juego donde hay que 
+      tener la palabra secreta o dirección.
+    </p>
+  
+    </section>
+
+<!-- Fin tercera sección -->
+
+
+<!-- Inicio cuarta sección -->
+    <section id="contact">
+        <br>
+    <h2>Contacto</h2>
+    <hr>
+    <figure id="imgsecret-bar">
+       <img src="Imagen/industrial.1.jpg" alt="secret-bar" style="max-width: 100%;"> 
+    </figure>
+     <p>Si tienes algún problema con el codificador por favor contactar a : taffymayen@gmail.com</p>
+
+    </section>
+ 
+<!-- Fin cuarta sección -->
+
+</main>
+
+</body>
+<link rel="stylesheet" href="style.css">
+<script src="cipher.js"></script>
+<script src="index.js"></script>
+
+
 </html>
