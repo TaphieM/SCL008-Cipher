@@ -9,7 +9,7 @@ buttonEncode.addEventListener( "click", () =>{
     let valueLetters= letters.value;
 
     document.getElementById("result").innerHTML = cipher.encode(valueOffset,valueLetters);
-   
+    
 })
 
 const buttonDecode =document.getElementById("buttonDecode");
@@ -31,5 +31,7 @@ buttonClean.addEventListener("click", () => {
   document.getElementById("result").innerHTML = "";
   document.getElementById("offset").value = "";
   document.getElementById("letters").value = "";
+  document.getElementById("errorOffset").innerHTML = "";
+  document.getElementById("errorLetters").innerHTML= "";
 
 });
