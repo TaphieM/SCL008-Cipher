@@ -1,8 +1,5 @@
 /* Acá va tu código */
 
-
-
-
 *{
     padding: 0 auto;   /*quitar marjen y padding de default*/
     margin: 0 auto;
@@ -90,25 +87,16 @@ body{
 
 
 /*Imagen segunda sección*/
-#imgwe-want-beer{
+#imgwe-want-beer,#imgbest-coctail,#imgsecret-bar {
 
   margin-top: 1em;
   margin-bottom: 1em;
   
 }
 
-/*Imagen tercera sección*/
-#imgbest-coctail{
+#errorOffset{
 
-    margin-top: 1em;
-    margin-bottom: 1em;
-    
-  }
-
-/*Imagen cuarta sección*/
-#imgsecret-bar{
-    margin-top: 1em;
-    margin-bottom: 1em;
-    
+  color: red;
+  font-size: 80%;  
 }
 

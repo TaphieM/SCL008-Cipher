@@ -22,6 +22,17 @@ describe('cipher', () => {
 
     });
 
+    it('debería retornar "G44y/7:`{" para "S00k!3:^|" con offset 14',() => {
+     
+      assert.equal(cipher.encode(14,"S00k!3:^|"), "G44y/7:`{" )
+
+    });
+
+    it('debería retornar "apñlñzwpy" para "peñañolen" con offset 11',() => {
+     
+      assert.equal(cipher.encode(11,"peñañolen"), "apñlñzwpy" )
+
+    });
 
   });
 
@@ -43,6 +54,17 @@ describe('cipher', () => {
 
     });
 
+    it('debería retornar "S00k!3:^|" para "G44y/7:`{" con offset 14',() => {
+     
+      assert.equal(cipher.decode(14,"G44y/7:`{"), "S00k!3:^|" )
+
+    });
+
+    it('debería retornar "peñañolen" para "apñlñzwpy" con offset 11',() => {
+     
+      assert.equal(cipher.decode(11,"apñlñzwpy"), "peñañolen" )
+
+    });
 
 
   });
